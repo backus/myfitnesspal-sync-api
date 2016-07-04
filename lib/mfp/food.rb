@@ -1,0 +1,31 @@
+# frozen_string_literal: true
+module MFP
+  class Food < Struct
+    field :master_food_id,       Type::Int
+    field :owner_user_master_id, Type::Int
+    field :original_master_id,   Type::Int
+    field :description,          Type::String
+    field :brand,                Type::String
+    field :flags,                Type::Int
+    field :calories,             Type::Float
+    field :fat,                  Type::Float
+    field :saturated_fat,        Type::Float
+    field :polyunsaturated_fat,  Type::Float
+    field :monounsaturated_fat,  Type::Float
+    field :trans_fat,            Type::Float
+    field :cholesterol,          Type::Float
+    field :sodium,               Type::Float
+    field :potassium,            Type::Float
+    field :carbohydrates,        Type::Float
+    field :fiber,                Type::Float
+    field :sugar,                Type::Float
+    field :protein,              Type::Float
+    field :vitamin_a,            Type::Float
+    field :vitamin_c,            Type::Float
+    field :calcium,              Type::Float
+    field :iron,                 Type::Float
+    field :grams,                Type::Float
+    field :type,                 Type::Short
+    field :portions,             Type::List[FoodPortion]
+  end # Food
+end # MFP
